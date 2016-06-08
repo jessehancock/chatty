@@ -15,7 +15,9 @@ You're going to use Node.js and Express to build a basic REST-based chat server.
 Since we aren't worried about persistently storing information in a chat server (for now, anyway), your understanding of Node.js and REST will allow you to create a server that will post and retrieve messages (the C & R verbs of CRUD) for a chatroom.
 * First we'll follow the beginning steps from this morning's mini project. First create a `.gitignore` file, open it in your editor, and add `node_modules`. Then, `npm init` and `npm install express --save`. This will download the Express library and save it to your package.json.
 * In server.js, import the 'express' module and initialize it by calling `var app = express()`. Now you can use the `app.listen` method on a port of your choice (between 8000 and 12000 is usual). Note that you will need to adjust the endpoints in the Angular service to match the port you choose.
-* Create an array for storing your messages temporarily. You could call it `messages`. Think about where this should be stored so that the data 'persists' between requests.
+
+<!-- * Create an array for storing your messages temporarily. You could call it `messages`. Think about where this should be stored so that the data 'persists' between requests. -->//what does persists mean?
+
 * Write a new GET endpoint that returns a JSON stringified response of your messages array. It will look something like this:
 ```javascript
 app.get('/', function( req, res ) {
